@@ -1,6 +1,6 @@
 /*
 Theme Name: Massalia
-Theme URI: 
+Theme URI:
 Author: Ville de Massalia
 Author URI: www.ville-de-massalia.fr
 Description: Thème personnalisé du site de la ville de Massalia
@@ -100,7 +100,7 @@ h6, .like-h6{
 
 a{
 	text-decoration:none;
-	color:#c94d1d; 
+	color:#c94d1d;
 }
 
 a:hover, a:focus{
@@ -558,7 +558,7 @@ ul.sub-menu.visible {
 	border-radius:0.5rem;
 	line-height:1;
 	position:relative;
-	background-color:#00587c; 
+	background-color:#00587c;
 	color:#ffffff;
 }
 
@@ -574,17 +574,17 @@ ul.sub-menu.visible {
 
 .grid {
 	display:flex;
-	flex-direction:row; 
-	flex-wrap:nowrap; 
-	justify-content:center; 
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
 }
 
 .grid-center{
-	align-items:center; 
+	align-items:center;
 }
 
 .grid-top {
-	align-items:flex-start; 
+	align-items:flex-start;
 }
 
 .grid-stretch{
@@ -640,7 +640,7 @@ ul.sub-menu.visible {
 }
 #contenu .bloc-lien .lien-categorie a {
 	display:inline;
-	
+
 }
 /* footer */
 
@@ -725,7 +725,7 @@ ul.sub-menu.visible {
 /* RWD */
 
 
-@media (max-width:767px){ 
+@media (max-width:767px){
 	body{
 		padding:0 10px 0 10px;
 	}
@@ -735,22 +735,22 @@ ul.sub-menu.visible {
 	#slogan{
 		text-align:left;
 	}
-	
+
 	.left{
 		float:none;
 	}
 	.right{
 		float:none;
 	}
-	
+
 	.grid  {
 		display: block;
 	}
-	
+
 	.grid-1-1-1 > *{
 		width:100%;
 	}
-	
+
 	.grid-1-2-1 > *:first-child{
 		width:100%;
 	}
@@ -764,7 +764,7 @@ ul.sub-menu.visible {
 	.grid-2-1 > * {
 		width: 100%;
 	}
-	
+
 	.grid-2 > *{
 		width:100%;
 	}
@@ -787,16 +787,16 @@ ul.sub-menu.visible {
 	#wrapper-navigation-principale{
 		background-color:#fff;
 	}
-	
+
 }
-@media (min-width:768px) and (max-width:991px){ 
+@media (min-width:768px) and (max-width:991px){
 	.grid-2-1 > *:first-child {
 		width: 100%;
 	}
 	.grid-2-1 > * + * {
 		width: 100%;
 	}
-	
+
 	.grid.grid-2-1{
 		flex-direction:column;
 	}
@@ -809,7 +809,8 @@ ul.sub-menu.visible {
 	.max-largeur{
 		max-width:1260px;
 	}
-	
+
 }
-
-
+ul.a {
+    list-style-type: circle;
+}

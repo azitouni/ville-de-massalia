@@ -8,7 +8,7 @@ function massalia_setup() {
 	/* Générer la balise title */
 	add_theme_support( 'title-tag' );
 	/* administrer les images à la une */
-	//add_theme_support( 'post-thumbnails');
+	add_theme_support( 'post-thumbnails');
 	/* administrer les menus */
 	add_theme_support('menus');
 	add_theme_support( 'html5', array(
