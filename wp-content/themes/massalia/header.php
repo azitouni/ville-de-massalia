@@ -14,7 +14,8 @@
 		<header id="banner" class="center max-largeur" role="banner">
 			<div class="grid grid-1-2-1 grid-center">
 					<div id="logo">
-						<?php the_custom_logo(); ?>
+						<?php  //the_custom_logo(); ?>
+						<?php echo get_logo(); ?>
 					</div>
 
 					<div id="slogan">
@@ -52,7 +53,7 @@
 			<?php
 				if (!is_front_page()) :
 					if ( function_exists('yoast_breadcrumb') ) :
-						echo '<div id="ariane" class="breadcrumbs">', yoast_breadcrumb('','',false), '</div>';
+						echo '<div id="ariane">', yoast_breadcrumb('','',false), '</div>';
 					endif;
 				endif;
 			?>

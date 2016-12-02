@@ -14,6 +14,7 @@
             <p>Publié le : <?php the_date(); ?>, par : <?php the_author_posts_link(); ?>, dans la catégorie : <?php the_category(' '); ?></p>
 
 					</header>
+					<?php the_field('chapeau'); ?>
 					<?php the_content(); ?>
 				</article>
 				<?php

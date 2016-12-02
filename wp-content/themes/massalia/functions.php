@@ -59,29 +59,31 @@ function massalia_remove_wordpress_version() {
 }
 add_filter('the_generator', 'massalia_remove_wordpress_version');
 
-/* génération code du logo */
-/*function get_logo(){
-	if (is_front_page()) :
-		$custom_logo_id = get_theme_mod('custom_logo');
-		$image = wp_get_attachment_image( $custom_logo_id ,'full');
-	else :
-		$image = get_custom_logo();
-	endif;
-	return $image;
-}*/
+// /* génération code du logo */
+// function get_logo(){
+// 	if (is_front_page()) :
+// 		$custom_logo_id = get_theme_mod('custom_logo');
+// 		$image = wp_get_attachment_image( $custom_logo_id ,'full');// full: c'est l'original
+// 	else :
+// 		$image = get_custom_logo();
+// 	endif;
+// 	return $image;
+// }
 
 /* balise title */
 
 function change_wp_title($title) {
- /*   global $post, $paged;
+   global $post, $paged;
 
     if (!is_front_page()):
-		$title['site'] = get_bloginfo( 'description', 'display' );
-		$title['tagline'] = get_bloginfo( 'name', 'display' );
+		//$title['site'] = get_bloginfo( 'description', 'display' );
+		//$title['tagline'] = get_bloginfo( 'name', 'display' );
+		$title['tagline'] = get_bloginfo( 'description' );
 	endif;
-*/
+
     return $title;
 }
 add_filter('document_title_parts', 'change_wp_title');
+
 
 ?>
